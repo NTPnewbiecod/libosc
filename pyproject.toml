@@ -1,6 +1,6 @@
 [project]
-name = "OpenSoundControlLib"
-version = "0.0.1"
+name = "osclib"
+version = "1.0.0"
 dependencies = [
-    "ntplib",
+    "ntplib"
 ]

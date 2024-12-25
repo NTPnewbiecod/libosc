@@ -19,26 +19,24 @@ class OSC_RGBAPacket(tuple):
 
 OscArgsType: TypeAlias = Union[float, int, str, bytes, OSC_RGBAPacket, OSC_MIDIPacket, bool, NoneType]
 OscList: TypeAlias = List[OscArgsType]
-OscNestAbleList: TypeAlias = List[Union[OscArgsType, OscList]]
 
 
-class OscTypesEnum(StrEnum):
-  FLOAT32 = "f"
-  FLOAT64 = "d"
-  INT32 = "i"
-  INT64 = "h"
-  STRING = "s"
-  BLOB = "b"
-  RGBA32 = "r"
-  MIDI = "m"
+FLOAT32 = "f"
+FLOAT64 = "d"
+INT32 = "i"
+INT64 = "h"
+STRING = "s"
+BLOB = "b"
+RGBA32 = "r"
+MIDI = "m"
 
-  OSC_TRUE = "T"
-  OSC_FALSE = "F"
-  OSC_NIL = "N"
-  OSC_INF = "I"
-  OSC_TIME = "t"
-  ANY = "any"
-  NOT_SUBPORTED_TYPE = "not supported"
+OSC_TRUE = "T"
+OSC_FALSE = "F"
+OSC_NIL = "N"
+OSC_INF = "I"
+OSC_TIME = "t"
+AUTO_ANY = "*"
+NOT_SUBPORTED_TYPE = "X"
 
 
 _ARRAY_START = "["
